@@ -20,7 +20,7 @@ const AllOrders = () => {
 
   useEffect(() => {
     const fetch = async () => {
-      const response = await axios.get('http://localhost:1000/api/v1/get-all-orders', { headers });
+      const response = await axios.get('https://intern-project-pki9.onrender.com/api/v1/get-all-orders', { headers });
       setAllOrders(response.data.data);
     };
     fetch();
@@ -33,7 +33,7 @@ const AllOrders = () => {
 
   const SubmitChanges = async (i) => {
     const id = AllOrders[i]._id;
-    const response = await axios.put(`http://localhost:1000/api/v1/update-status/${id}`, Values, { headers });
+    const response = await axios.put(`https://intern-project-pki9.onrender.com/api/v1/update-status/${id}`, Values, { headers });
     if (response.data.status === "success") {
       const updatedOrders = [...AllOrders];
       updatedOrders[i].status = Values.status;
