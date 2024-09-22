@@ -17,7 +17,7 @@ const SignUp = () => {
       if (Values.username === "" || Values.email === "" || Values.password === "" || Values.address === "") {
         alert("Please fill all the fields");
       } else {
-        const response = await axios.post("http://localhost:1000/api/v1/sign-up", Values);
+        const response = await axios.post("https://intern-project-pki9.onrender.com/api/v1/sign-up", Values);
         alert(response.data.message);
         navigate("/log-in");
       }
