@@ -7,7 +7,7 @@ const RecentlyAdded = () => {
     const [Data, setData] = useState();
     useEffect(() => {
         const fetch = async () => {
-            const response = await axios.get("http://localhost:1000/api/v1/get-recently-added-books");
+            const response = await axios.get("https://intern-project-pki9.onrender.com/api/v1/get-recently-added-books");
             setData(response.data.data);
         };
       fetch();
