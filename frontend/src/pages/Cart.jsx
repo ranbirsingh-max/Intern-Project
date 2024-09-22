@@ -14,7 +14,7 @@ const Cart = () => {
   useEffect(() => {
     const fetch =async () => {
       const res = await axios.get(
-      "http://localhost:1000/api/v1/get-user-cart",
+      "https://intern-project-pki9.onrender.com/api/v1/get-user-cart",
       { headers }
   );
     setCart(res.data.data);
@@ -41,7 +41,7 @@ const Cart = () => {
     try {
       console.log("Placing order with payload:", { order: Cart }); // Log the payload
       const response = await axios.post(
-        "http://localhost:1000/api/v1/place-order",
+        "https://intern-project-pki9.onrender.com/api/v1/place-order",
         { order: Cart },
         { headers }
       );
