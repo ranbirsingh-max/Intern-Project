@@ -1,4 +1,5 @@
 # Internship-Project
-![Screenshot (280)](https://github.com/user-attachments/assets/5b87d9b4-4764-45b1-a6e2-053c9fea11ac)
-![Screenshot (281)](https://github.com/user-attachments/assets/1b52a237-0009-4cb0-aeae-70b6598a40cc)
-![Screenshot (283)](https://github.com/user-attachments/assets/a1c864ad-e1bb-457f-92a8-165351341672)
+![Screenshot (280)](https://github.com/user-attachments/assets/2eeee800-a1f6-4e12-908a-a373103ab4ee)
+![Screenshot (281)](https://github.com/user-attachments/assets/94a9fd94-dc98-4510-bea1-d4bcbfe3f44c)
+![Screenshot (282)](https://github.com/user-attachments/assets/a0d7fa97-d9a7-4258-9374-b04468825ddc)
+![Screenshot (283)](https://github.com/user-attachments/assets/ef764931-e973-42e4-ac3f-67fe6878779a)
