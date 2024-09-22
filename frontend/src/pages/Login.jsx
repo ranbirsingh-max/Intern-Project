@@ -20,7 +20,7 @@ const LogIn = () => {
       if (Values.username === "" || Values.password === "") {
         alert("Please fill all the fields");
       } else {
-        const response = await axios.post("http://localhost:1000/api/v1/sign-in", Values);
+        const response = await axios.post("https://intern-project-pki9.onrender.com/api/v1/sign-in", Values);
         dispatch(authActions.login());
         dispatch(authActions.changeRole(response.data.role));
         localStorage.setItem("id", response.data.id);
