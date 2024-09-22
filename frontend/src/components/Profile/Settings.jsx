@@ -20,7 +20,7 @@ const Settings = () => {
         const fetch = async () => {
             try {
                 const response = await axios.get(
-                    "http://localhost:1000/api/v1/get-user-information",
+                    "https://intern-project-pki9.onrender.com/api/v1/get-user-information",
                     { headers }
                 );
                 setProfileData(response.data);
@@ -35,7 +35,7 @@ const Settings = () => {
     const submitAddress = async () => {
         try {
             const response = await axios.put(
-                "http://localhost:1000/api/v1/update-address",
+                "https://intern-project-pki9.onrender.com/api/v1/update-address",
                 { address: Value.address },
                 { headers }
             );
