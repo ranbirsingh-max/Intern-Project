@@ -17,7 +17,7 @@ const ViewBookDetails = () => {
   useEffect(() => {
     const fetchBookDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:1000/api/v1/get-book-by-id/${id}`);
+        const response = await axios.get(`https://intern-project-pki9.onrender.com/api/v1/get-book-by-id/${id}`);
         setData(response.data.data);
       } catch (error) {
         console.error("Error fetching book details:", error);
@@ -42,14 +42,14 @@ const ViewBookDetails = () => {
   };
   const hendleCart = async () => {
     try {
-        const response = await axios.put("http://localhost:1000/api/v1/add-to-cart",{},{ headers });
+        const response = await axios.put("https://intern-project-pki9.onrender.com/api/v1/add-to-cart",{},{ headers });
         alert(response.data.message);
         } catch (error) {
             console.error("Error adding book to cart:", error);
             }
             };
     const deleteBook = async () => {
-        const response = await axios.delete("http://localhost:1000/api/v1/delete-book",{ headers });
+        const response = await axios.delete("https://intern-project-pki9.onrender.com/api/v1/delete-book",{ headers });
         alert(response.data.message);
         navigate("/all-books");
     }
