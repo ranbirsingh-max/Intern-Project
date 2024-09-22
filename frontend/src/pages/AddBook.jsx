@@ -35,7 +35,7 @@ const AddBook = () => {
                 setMessage("Please fill all the fields");
             } else {
                 const response = await axios.post(
-                    "http://localhost:1000/api/v1/add-book",
+                    "https://intern-project-pki9.onrender.com/api/v1/add-book",
                     Data,
                     { headers }
                 );
