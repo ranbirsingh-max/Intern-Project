@@ -34,7 +34,7 @@ const ViewBookDetails = () => {
 
   const handleFavourite = async () => {
     try {
-      const response = await axios.put("http://localhost:1000/api/v1/add-book-to-favourite", {}, { headers });
+      const response = await axios.put("https://intern-project-pki9.onrender.com/api/v1/add-book-to-favourite", {}, { headers });
       alert(response.data.message);
     } catch (error) {
       console.error("Error adding book to favourite:", error);
