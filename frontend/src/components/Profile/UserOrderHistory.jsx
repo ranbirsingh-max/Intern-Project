@@ -14,7 +14,7 @@ const UserOrderHistory = () => {
     useEffect(() => {
         const fetchOrderHistory = async () => {
             try {
-                const response = await axios.get('http://localhost:1000/api/v1/get-order-history', { headers });
+                const response = await axios.get('https://intern-project-pki9.onrender.com/api/v1/get-order-history', { headers });
                 setOrderHistory(response.data.data);
             } catch (error) {
                 console.error('Error fetching order history:', error);
